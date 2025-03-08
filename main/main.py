@@ -36,7 +36,7 @@ selected_links = random.sample(link_list, 3)
 #display.start()
 
 def run_browser(thread_id, url):
-    while True:
+    
         start_time = time.time()  # Track when the thread starts
         print(f"Thread-{thread_id}: Starting new browser session for {url}")
 
@@ -94,7 +94,8 @@ def run_browser(thread_id, url):
 
             random_mouse_move()
 
-            while time.time() - start_time < 420:  # Run for max 7 minutes (420s)
+            #while time.time() - start_time < 420:  # Run for max 7 minutes (420s)
+            for i in range(2)
                 try:
                     play_button_xpath = '//div[@aria-label="Play"]'
                     WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, play_button_xpath)))
