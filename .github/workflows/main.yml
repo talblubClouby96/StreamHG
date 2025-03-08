@@ -28,7 +28,7 @@ jobs:
         run: pip install undetected-chromedriver selenium chromedriver_autoinstaller pyautogui fake-useragent
 
       - name: Run Selenium script
-        run: python main.py
+        run: python main/main.py
         
       - name: Archive screenshots
         uses: actions/upload-artifact@v4
