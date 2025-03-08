@@ -95,7 +95,7 @@ def run_browser(thread_id, url):
             random_mouse_move()
 
             #while time.time() - start_time < 420:  # Run for max 7 minutes (420s)
-            for i in range(2)
+            for i in range(2):
                 try:
                     play_button_xpath = '//div[@aria-label="Play"]'
                     WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, play_button_xpath)))
