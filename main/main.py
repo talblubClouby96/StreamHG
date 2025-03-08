@@ -150,6 +150,7 @@ def run_browser(thread_id, url):
             print(f"Thread-{thread_id}: Unexpected error: {e}")
 
         finally:
+            time.sleep(120)
             driver.quit()
             time.sleep(random.randint(10, 30))  # Random delay before restarting the browser
 
